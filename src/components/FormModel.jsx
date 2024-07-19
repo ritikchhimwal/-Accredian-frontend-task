@@ -61,7 +61,7 @@ const FormModel = ({ onClose }) => {
     if (validate()) {
       setIsLoading(true);
       try {
-        const response = await axios.post('http://localhost:5000/refer', formData);
+        const response = await axios.post('https://accredian-backend-task-omega.vercel.app/refer', formData);
         console.log('Data submitted successfully', response.data);
         setFormData({
           userName: '',
